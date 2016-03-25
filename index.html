@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    
+        <!-- Author: Ruben Gallegos, @juegoman -->
+        <title>Pizza Builder Client</title>
+        <link rel="stylesheet" type="text/css" href="style.css"> 
+        
+    </head>
+    <body>
+    
+        <p><h1>Pizza Builder Client</h1></p>
+        <!--    Control Panel    -->
+        <div>
+            <p>
+                <button id="getToppings">List Toppings</button>
+                <button id="postToppings">Create a Topping</button>
+            </p>
+            <p>
+                <button id="getPizzas">List Pizzas</button>
+                <button id="postPizzas">Create a Pizza</button>
+            </p>
+            <div>
+
+                <p>Select an existing pizza id</p>
+                <input type="number" id="pizzaId">
+                <p>
+                    <button id="getToppingsWithId">List Toppings for this Pizza</button>
+                    <button id="postToppingsWithId">Add a Topping to this Pizza</button>
+                </p>
+
+            </div>
+        </div>
+        
+        <div id="topCreate" class="hidden">
+            <h3>Create a Topping</h3>
+            <input type="text" id="topNm" placeholder="Topping name">
+            <button class="submit">Submit Topping</button>
+        </div>
+        <div id="pizCreate" class="hidden">
+            <h3>Create a Pizza</h3>
+            <input type="text" id="pizNm" placeholder="Pizza name">
+            <button class="submit">Submit Pizza</button>
+            <br>
+            <textarea contenteditable="true" draggable="true" id="pizDesc" placeholder="Pizza Description"></textarea>
+        </div>    
+        <div id="pizAddTop" class="hidden">
+            <h3>Add a Topping to a Pizza</h3>
+            <input type="number" id="topId" placeholder="Topping ID">
+            <button class="submit">Submit Topping to Pizza</button>
+        </div>
+    
+        <div id="noteBar"></div>
+        <div id="pizzaName"></div>
+        <div id="workspace"></div>
+    </body>
+    <script type="text/javascript" src="jquery.min.js"></script>    
+    <script type="text/javascript" src="main.min.js"></script>
+</html>

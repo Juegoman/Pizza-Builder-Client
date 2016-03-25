@@ -1,0 +1,18 @@
+.indivRes {
+    border: 1px solid black;
+    border-radius: 2px;
+    background: #DDD;
+}
+.nameHl {
+    background: white;
+    padding: 0 2px;
+}
+li {
+    padding: 1px 0;
+}
+#noteBar {
+    background: lightblue;
+}
+.hidden {
+    display: none;
+}
